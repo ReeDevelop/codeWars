@@ -26,3 +26,7 @@ function points(games) {
       // add points together
     }).reduce((previous,current) => previous + current, 0);
 }
+
+const points=games=>games.reduce((output,current)=>{
+  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+},0)
