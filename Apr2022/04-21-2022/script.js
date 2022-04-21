@@ -1,10 +1,12 @@
-// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+// Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
 
-// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
-// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
-// invert([]) == []
-// You can assume that all values are integers. Do not mutate the input array/list.
+// moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 
-function invertVals(){
-    // code
+function moveZeros(arr) {
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] == 0){
+        arr.push(arr.splice([i], 1)[0]);
+      }
+    }
+    return arr
 }
