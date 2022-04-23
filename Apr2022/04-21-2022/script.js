@@ -6,5 +6,5 @@
 // You can assume that all values are integers. Do not mutate the input array/list.
 
 function invertVals(){
-
+    // code
 }
