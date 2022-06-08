@@ -18,11 +18,9 @@ Examples
 
 function maskify(cc) {
     let ccMask = cc.split('').map(function(element, index) {
-      if(index < cc.length - 4){
-        return '#'
-      }else{
-        return element
-      }
+      return index < cc.length - 4
+        ? '#'
+        : element
     }).join('')
     return ccMask;
 }
