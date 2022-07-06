@@ -13,4 +13,10 @@ function solution(nums){
         if (a < b) { return -1; }
       });
     }
-  }
+}
+
+function solution(nums){
+    return (nums || []).sort(function(a, b){
+      return a - b
+    });
+}
