@@ -15,4 +15,4 @@ def insertion_sort(array):
         
         array[position + 1] = temp_value
      
-     return array
+    return array
